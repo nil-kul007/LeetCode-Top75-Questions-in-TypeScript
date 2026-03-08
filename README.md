@@ -15,7 +15,7 @@
 
 ---
 
-## <a id="problem-1" href="https://leetcode.com/problems/two-sum/" target="_blank">1. Two Sum (Easy)</a>
+## <span id="problem-1">1. Two Sum (Easy)</span> | <a href="https://leetcode.com/problems/two-sum/" target="_blank" rel="noopener noreferrer">View on LeetCode</a>
 
 <details>
 <summary>Show Solution</summary>
@@ -42,7 +42,7 @@ console.log(twoSum([3, 3], 6)); // [0, 1]
 
 </details>
 
-## <a id="problem-20" href="https://leetcode.com/problems/valid-parentheses/" target="_blank">20. Valid Parentheses (Easy)</a>
+## <span id="problem-20">20. Valid Parentheses (Easy)</span> | <a href="https://leetcode.com/problems/valid-parentheses/" target="_blank" rel="noopener noreferrer">View on LeetCode</a>
 
 <details>
 <summary>Show Solution</summary>
@@ -68,7 +68,7 @@ function isValid(s: string): boolean {
 
 </details>
 
-## <a id="problem-21" href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank">21. Merge Two Sorted Lists (Easy)</a>
+## <span id="problem-21">21. Merge Two Sorted Lists (Easy)</span> | <a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank" rel="noopener noreferrer">View on LeetCode</a>
 
 <details>
 <summary>Show Solution</summary>
@@ -110,7 +110,7 @@ export { mergeTwoLists };
 
 </details>
 
-## <a id="problem-121" href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" target="_blank">121. Best Time to Buy and Sell Stock (Easy)</a>
+## <span id="problem-121">121. Best Time to Buy and Sell Stock (Easy)</span> | <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" target="_blank" rel="noopener noreferrer">View on LeetCode</a>
 
 <details>
 <summary>Show Solution</summary>
@@ -135,7 +135,7 @@ function maxProfit(prices: number[]): number {
 
 </details>
 
-## <a id="problem-125" href="https://leetcode.com/problems/valid-palindrome/" target="_blank">125. Valid Palindrome (Easy)</a>
+## <span id="problem-125">125. Valid Palindrome (Easy)</span> | <a href="https://leetcode.com/problems/valid-palindrome/" target="_blank" rel="noopener noreferrer">View on LeetCode</a>
 
 <details>
 <summary>Show Solution</summary>
@@ -181,7 +181,7 @@ const isValiedChar = (char: string) : boolean => {
 
 </details>
 
-## <a id="problem-226" href="https://leetcode.com/problems/invert-binary-tree/" target="_blank">226. Invert Binary Tree (Easy)</a>
+## <span id="problem-226">226. Invert Binary Tree (Easy)</span> | <a href="https://leetcode.com/problems/invert-binary-tree/" target="_blank" rel="noopener noreferrer">View on LeetCode</a>
 
 <details>
 <summary>Show Solution</summary>
@@ -215,7 +215,7 @@ function invertTree(root: TreeNode | null): TreeNode | null {
 
 </details>
 
-## <a id="problem-242" href="https://leetcode.com/problems/valid-anagram/" target="_blank">242. Valid Anagram (Easy)</a>
+## <span id="problem-242">242. Valid Anagram (Easy)</span> | <a href="https://leetcode.com/problems/valid-anagram/" target="_blank" rel="noopener noreferrer">View on LeetCode</a>
 
 <details>
 <summary>Show Solution</summary>
@@ -248,7 +248,7 @@ function isAnagram(s: string, t: string): boolean {
 
 </details>
 
-## <a id="problem-704" href="https://leetcode.com/problems/binary-search/" target="_blank">704. Binary Search (Easy)</a>
+## <span id="problem-704">704. Binary Search (Easy)</span> | <a href="https://leetcode.com/problems/binary-search/" target="_blank" rel="noopener noreferrer">View on LeetCode</a>
 
 <details>
 <summary>Show Solution</summary>
