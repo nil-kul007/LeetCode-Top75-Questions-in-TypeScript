@@ -27,6 +27,74 @@ console.log(twoSum([3, 3], 6)); // [0, 1]
 
 </details>
 
+## [20. Valid Parentheses (Easy)](https://leetcode.com/problems/valid-parentheses/)
+
+<details>
+<summary>Show Solution</summary>
+
+```typescript
+// Time: O(n), Space: O(n)
+function isValid(s: string): boolean {
+    const pairsSet = '() {} []'
+    let stack = []
+    
+    for(let char of s){
+        stack.push(char)
+        let left = stack[stack.length-2]
+        let right = stack[stack.length-1]
+        if(pairsSet.includes(left + right)){
+            stack.pop()
+            stack.pop()
+        }
+    }
+    return stack.length === 0
+}
+```
+
+</details>
+
+## [21. Merge Two Sorted Lists (Easy)](https://leetcode.com/problems/merge-two-sorted-lists/)
+
+<details>
+<summary>Show Solution</summary>
+
+```typescript
+import { ListNode } from "./utils/ListNode.js";
+
+/**
+ * Merge two sorted linked lists into a single sorted linked list.
+ * 
+ * Time Complexity: O(n + m) where n and m are the lengths of list1 and list2
+ * Space Complexity: O(1) - only using a constant amount of extra space for pointers
+ */
+function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
+    let mergedList: ListNode = new ListNode(0)
+    let dummy: ListNode = mergedList
+
+    while(list1 && list2){
+        if(list1.val <= list2.val){
+            dummy.next = list1
+            list1= list1.next
+        } else {
+            dummy.next = list2
+            list2= list2.next
+        }
+            dummy= dummy.next
+    }
+    if(list1){
+        dummy.next = list1
+    }
+    if(list2){
+        dummy.next = list2
+    }
+    return mergedList.next
+};
+
+export { mergeTwoLists };
+```
+
+</details>
+
 ## [121. Best Time to Buy and Sell Stock (Easy)](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 <details>
@@ -94,74 +162,6 @@ function isPalindrome(s: string): boolean {
 const isValiedChar = (char: string) : boolean => {
     return /[a-z0-9]/i.test(char)
 }
-```
-
-</details>
-
-## [20. Valid Parentheses (Easy)](https://leetcode.com/problems/valid-parentheses/)
-
-<details>
-<summary>Show Solution</summary>
-
-```typescript
-// Time: O(n), Space: O(n)
-function isValid(s: string): boolean {
-    const pairsSet = '() {} []'
-    let stack = []
-    
-    for(let char of s){
-        stack.push(char)
-        let left = stack[stack.length-2]
-        let right = stack[stack.length-1]
-        if(pairsSet.includes(left + right)){
-            stack.pop()
-            stack.pop()
-        }
-    }
-    return stack.length === 0
-}
-```
-
-</details>
-
-## [21. Merge Two Sorted Lists (Easy)](https://leetcode.com/problems/merge-two-sorted-lists/)
-
-<details>
-<summary>Show Solution</summary>
-
-```typescript
-import { ListNode } from "./utils/ListNode.js";
-
-/**
- * Merge two sorted linked lists into a single sorted linked list.
- * 
- * Time Complexity: O(n + m) where n and m are the lengths of list1 and list2
- * Space Complexity: O(1) - only using a constant amount of extra space for pointers
- */
-function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
-    let mergedList: ListNode = new ListNode(0)
-    let dummy: ListNode = mergedList
-
-    while(list1 && list2){
-        if(list1.val <= list2.val){
-            dummy.next = list1
-            list1= list1.next
-        } else {
-            dummy.next = list2
-            list2= list2.next
-        }
-            dummy= dummy.next
-    }
-    if(list1){
-        dummy.next = list1
-    }
-    if(list2){
-        dummy.next = list2
-    }
-    return mergedList.next
-};
-
-export { mergeTwoLists };
 ```
 
 </details>
